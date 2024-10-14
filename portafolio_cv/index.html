@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!-- Menú encabezado -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Portafolio</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobreMi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRÍCULUM</a></li>
+                    <li><a href="#portafolio" onclick="seleccionar()">PORTAFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-duotone fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- Sección inicio -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/hero.jpg" alt="">
+            </div>
+            <h1>Bryan Soto Fariña</h1>
+            <h2>Analista Programador</h2>
+            <div class="redes">
+                <a href="https://www.linkedin.com/in/bryan-soto-fari%C3%B1a-7594a7241/"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Sobre mi -->
+    <section id="sobreMi" class="sobreMi">
+        <div class="contenido-seccion">
+            <h2>Sobre mi</h2>
+            <p><span>En conjunto con saludar, mi nombre es Bryan Soto Fariña.</span>
+                Me considero una persona bastante enfocada en el crecimiento personal, ser autodidacta, metódico y de alto pensamiento crítico. Me gusta el aprendizaje constante e ir a la vanguardia de las tecnologías de información.
+            </p>
+
+            <div class="fila">
+                <!-- Datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Año de nacimiento:</strong>
+                            13/12/1996
+                        </li>
+                        <li>
+                            <strong>Nro. Celular:</strong>
+                            +569 8520 0301
+                        </li>
+                        <li>
+                            <strong>Correo:</strong>
+                            bryan.soto.smoke@gmail.com
+                        </li>
+                        <li>
+                            <strong>Website:</strong>
+                            www.example.cl
+                        </li>
+                        <li>
+                            <strong>Dirección:</strong>
+                            Talinay con Huapi #722
+                        </li>
+                        <li>
+                            <strong>Status carrera:</strong>
+                            Egresado
+                        </li>
+                        <li>
+                            <strong>Institución:</strong>
+                            Centro de Formación Técnica INACAP
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="intereses">
+                            <i class="fa-solid fa-rotate-left"></i>
+                            <span>Backend</span>
+                        </div>
+                        <div class="intereses">
+                            <i class="fa-solid fa-laptop"></i>
+                            <span>Soporte Técnico</span>
+                        </div>
+                        <div class="intereses">
+                            <i class="fa-brands fa-windows"></i>
+                            <span>Windows OS</span>
+                        </div>
+                        <div class="intereses">
+                            <i class="fa-solid fa-database"></i>
+                            <span>Base de datos</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="descargaCvBtn" data-timer="3">
+                Descargar CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Seccion Skills -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills (Habilidades)</h2>
+            <div class="fila">
+                <!-- Habilidades técnicas -->
+                <div class="col">
+                    <h3>Habilidades Técnicas</h3>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>20%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML5 & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>45%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Java</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>C#</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>50%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>SQL/T-SQL</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>40%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Windows OS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Linux OS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>20%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Microsoft Office</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Habilidades profesionales -->
+                <div class="col">
+                    <h3>Habilidades Profesionales</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>60%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>50%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>45%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Resiliencia</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Compromiso</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seccion Currículum -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Currículum</h2>
+            <div class="fila">
+                <div class="col izquerda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Técnico Medio en Electricidad</h4>
+                        <span class="casa">Liceo Industrial Chileno Alemán</span>
+                        <span class="fecha">2011 - 2014</span>
+                        <span class="direccion">Calle Dr Johow 357, Ñuñoa, Santiago.</span>
+                        <p>Institución en la cual me gradué de técnico medio en electricidad, adquiriendo las habilidades necesarias para gestionar instalaciones eléctricas, uso de herramientas relacionadas al área estudiada y conocimientos generales de seguridad en el rubro de esta misma.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Técnico Analista Programador</h4>
+                        <span class="casa">Centro de Formación Técnica INACAP</span>
+                        <span class="fecha">2018 - 2022</span>
+                        <span class="direccion">Av. Escuela Agrícola, Macul, Santiago.</span>
+                        <p>Egresado como analista programador, en esta etapa obtuve las herramientas y conocimientos de cómo gestionar proyectos TI, lógica de programación, conocimientos generales del área backend y frontend. Punto más relevante en mi proceso académico, en el cual me establecí como profesional.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia laboral</h3>
+                    <div class="item der">
+                        <h4>Técnico Electromecánico</h4>
+                        <span class="casa">Makita Chile SA., Sector Taller Eléctrico</span>
+                        <span class="fecha">Mar./dic. 2018</span>
+                        <span class="direccion">Vicuña Mackenna 1467, Santiago, Rm.</span>
+                        <p>Reparación general de instrumentos y herramientas clase electromecánicas. (Taladros, Sierras circulares, demoledores, Rotomartillos, etc.)</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Técnico Electromecánico</h4>
+                        <span class="casa">Max Plus Ltda., Sector Taller Eléctrico</span>
+                        <span class="fecha">Mar./oct. 2019</span>
+                        <span class="direccion">Víctor Manuel 1628, Santiago, Rm.</span>
+                        <p>Reparación general de instrumentos y herramientas clase electromecánicas. (Taladros, Sierras circulares, demoledores, Rotomartillos, etc.)</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Técnico de Tecnologías IT</h4>
+                        <span class="casa">Vector, Sector Taller Tecnologías IT</span>
+                        <span class="fecha">Nov./dic. 2019</span>
+                        <span class="direccion">Los Alerces, Santiago, Rm.</span>
+                        <p>Atención al cliente y reparar equipos hardware enlazados a la tecnología de información como PC, celulares Android, Tablet, etc.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Personal Multifuncional de Área Servicio al Cliente</h4>
+                        <span class="casa">Ripley, Sector Atención al Cliente</span>
+                        <span class="fecha">Ene./jul. 2020</span>
+                        <span class="direccion">Avenida Padre Hurtado Sur, Las Condes, Rm.</span>
+                        <p>Atender clientes con dudas de productos ya adquiridos a través de la tienda, productos cancelados de forma online, atención al cliente en centro de atención telefónica (call center), funciones generales del área servicio al cliente en tienda retail.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Técnico en Hardware de Equipos POS</h4>
+                        <span class="casa">IBM Servicio Técnico, Sector Soporte</span>
+                        <span class="fecha">Ago./sept. 2020</span>
+                        <span class="direccion">Av. Providencia 655, Santiago, Providencia, Rm.</span>
+                        <p>Reparación y mantención de equipos para realizar transferencias y pagos por medio de tarjetas de crédito o débito.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Soporte Informático en Equipos MAC (Apple)</h4>
+                        <span class="casa">Escuela de la industria gráfica, Sector Informatica/Telecomunicaciones</span>
+                        <span class="fecha">Oct./dic. 2020</span>
+                        <span class="direccion">Florencia 1442, San Miguel, Rm.</span>
+                        <p>Formatear equipos Mac en estado crítico y cambios de tarjeta RAM. Redactar informes sobre el estado del hardware tanto software de los equipos en malas o buenas condiciones. Soporte de redes (Recuperación de Puntos y Mantención de Router).</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Portafolio -->
+    <section id="portafolio" class="portafolio">
+        <div class="contenido-seccion">
+                <h2>Portafolio</h2>
+                <h3>Aplicación Móvil para Sistema Operativo Android</h3>
+                <h4>Esta aplicación se desarrolló con el fin de incentivar a los jugadores de "Mitos y Leyendas" en organizar torneos para así revivir aquellos tiempos en los cuales el juego estaba en su cúspide de fama, lo cual conllevo a inclusive campeonatos importantes en el país, lo cual al paso del tiempo cambio abruptamente, dando a relucir la idea y el objetivo en concreto de esta aplicación.</h4>
+                <h5>Storyboard</h5>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img class="img1" src="img/login.png" alt="">
+                    <div class="overlay">
+                        <p>Login de aplicación</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img class="img2" src="img/registro.png" alt="">
+                    <div class="overlay">
+                        <p>Registro desde la aplicación</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img class="img3" src="img/registroGoogle.png" alt="">
+                    <div class="overlay">
+                        <p>Registro con Google</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img class="img4" src="img/perfil.png" alt="">
+                    <div class="overlay">
+                        <p>Perfil de usuario</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img class="img5" src="img/mensajes.png" alt="">
+                    <div class="overlay">
+                        <p>Chat de mensajes</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img class="img6" src="img/torneos.png" alt="">
+                    <div class="overlay">
+                        <p>Torneos publicados</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img class="img7" src="img/infoMyl.png" alt="">
+                    <div class="overlay">
+                        <p>Información sobre Mitos y Leyendas</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img class="img8" src="img/comoJugar.png" alt="">
+                    <div class="overlay">
+                        <p>Cómo jugar Mitos y Leyendas</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img class="img9" src="img/cerrarSesion.png" alt="">
+                    <div class="overlay">
+                        <p>Cerrar sesión</p>
+                    </div>
+                </div>
+            </div>
+            <button class="descargaProyectoBtn" data-timer="3">
+                Descargar Proyecto <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Sección Contacto -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>Contacto</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <input type="text" placeholder="Nombre">
+                    <input type="text" placeholder="Número celular">
+                    <input type="text" placeholder="Email">
+                    <input type="text" placeholder="Asunto">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>
+                        Enviar Mensaje <i class="fa-sharp fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <!-- Mapa -->
+                <div class="col">
+                    <img src="img/direccion.png" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Huapi #722, La Reina, Santiago
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile"></i>
+                                +569 8520 0301
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                bryan.soto.smoke@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-arrow-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://www.linkedin.com/in/bryan-soto-fari%C3%B1a-7594a7241/"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+
+</body>
+</html>
